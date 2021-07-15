@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorGrayLight">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:background="@color/colorPrimary">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_iv"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/camera_icon" />
+
+                <TextView
+                    android:id="@+id/display_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_iv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Display Name"
+                    android:textColor="@color/colorGrayLight"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="220dp"
+                app:cardBackgroundColor="#ffff">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Degree:" />
+
+                        <TextView
+                            android:id="@+id/degree_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B.Tech"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Branch:" />
+
+                        <TextView
+                            android:id="@+id/branch_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CSE"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Student ID:" />
+
+                        <TextView
+                            android:id="@+id/student_id_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="18449"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/equipment_issued_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Equipment issued:"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/equipment_photo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/equipment_issued_tv"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/camera_icon" />
+
+
+            <RelativeLayout
+                android:id="@+id/equipment_info_rl"
+                android:layout_width="220dp"
+                android:layout_height="700dp"
+                android:layout_alignTop="@+id/equipment_photo"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/equipment_photo">
+
+                <TextView
+                    android:id="@+id/equipment_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Equipment Name"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/equipment_sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/equipment_name"
+                    android:layout_marginTop="5dp"
+                    android:text="Sport"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/equipmentcontents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/equipment_sport"
+                    android:layout_marginTop="5dp"
+                    android:text="Contents:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/equipment_contents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/equipment_sport"
+                    android:layout_marginTop="5dp"
+                    android:text="contents on:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/equipment_bookeddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/equipment_contents"
+                    android:layout_marginTop="5dp"
+                    android:text="Booked on:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/equipment_issuedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/equipment_bookeddate"
+                    android:layout_marginTop="5dp"
+                    android:text="Issued on:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/equipment_booked_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/equipment_contents"
+                    android:layout_marginTop="5dp"
+                    android:text="Date"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/equipment_issue_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/equipment_booked_date"
+                    android:layout_marginTop="5dp"
+                    android:text="-"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/equipmentstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/equipment_issuedate"
+                    android:layout_marginTop="5dp"
+                    android:text="Status:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/equipment_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/equipment_issuedate"
+                    android:layout_marginTop="5dp"
+                    android:text="Booked"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/equipmentstatus"
+                    android:layout_marginTop="5dp"
+                    android:text="Fine due:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/equipment_fine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/equipmentstatus"
+                    android:layout_marginTop="5dp"
+                    android:text="₹0"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/hello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="." />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

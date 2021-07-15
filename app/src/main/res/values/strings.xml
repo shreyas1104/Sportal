@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Sportal</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main_student">MainActivityStudent</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <array name="degree">
+        <item>B.Tech</item>
+        <item>B.Arch</item>
+        <item>M.Tech</item>
+        <item>M.Sc</item>
+        <item>PhD</item>
+    </array>
+
+    <array name="btech">
+        <item>CME</item>
+        <item>CIV</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>MEC</item>
+        <item>MME</item>
+        <item>MIN</item>
+    </array>
+
+    <array name="barch">
+        <item>ARC</item>
+    </array>
+
+    <array name="mtech">
+        <item>MCL</item>
+        <item>CMN</item>
+        <item>CDM</item>
+        <item>MCS</item>
+        <item>CTM</item>
+        <item>ENV</item>
+        <item>EXV</item>
+        <item>HPE</item>
+        <item>IND</item>
+        <item>IPS</item>
+        <item>MTE</item>
+        <item>PED</item>
+        <item>SDE</item>
+        <item>STR</item>
+        <item>TRE</item>
+        <item>UPL</item>
+        <item>MVD</item>
+        <item>WRE</item>
+    </array>
+
+    <array name="msc">
+        <item>PHY</item>
+        <item>CHM</item>
+        <item>MTH</item>
+    </array>
+
+    <array name="phd">
+
+    </array>
+
+    <item name="content1" type="id" />
+    <item name="content2" type="id" />
+    <item name="content3" type="id" />
+    <item name="content4" type="id" />
+    <item name="content5" type="id" />
+
+
+</resources>

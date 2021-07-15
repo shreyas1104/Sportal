@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.sportal.MainActivityAdmin"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/admin_heading"
+            android:text="Sportal Administrator"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/scan_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan QR code" />
+
+    <Button
+        android:id="@+id/add_equipment_btn"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add new equipment" />
+
+    <Button
+        android:id="@+id/edit_equipment_btn"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit equipment data" />
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout" />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanResultActivity1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/equipment_iv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/camera_icon"
+            android:layout_margin="15dp"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/equipment_iv"
+            android:layout_marginTop="20dp"
+            android:weightSum="2"
+            android:layout_centerVertical="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name:"
+                    android:textSize="14sp"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Degree:"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Branch:"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student ID:"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name:"
+                    android:textSize="14sp"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/degree_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Degree:"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/branch_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Branch:"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/student_id_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student ID:"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/equipment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/equipment_booked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Equipment booked:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/equipment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/equipment_booked"
+                android:text="Equipment pack name"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sport:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/equipment_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sport"
+                android:text="Sport name"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/contents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contents:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/equipment_contents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/contents"
+                android:text="Contents"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/equipment_bookeddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booked Date:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/equipment_booking_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/equipment_bookeddate"
+                android:text="Date"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/equipment_issuedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Issue Date:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/equipment_issue_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/equipment_issuedate"
+                android:text="-"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/equipmentfine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fine due:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/equipment_fine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/equipmentfine"
+                android:text="-"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/equipment_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/status"
+                android:text="Booked"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <Button
+            android:id="@+id/action_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Issue Equipment"
+            android:textColor="@color/colorGrayLight" />
+    </RelativeLayout>
+
+
+</LinearLayout>

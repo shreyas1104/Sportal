@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1015411763706",
+    "firebase_url": "https://sportal-92124.firebaseio.com",
+    "project_id": "sportal-92124",
+    "storage_bucket": "sportal-92124.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015411763706:android:d4a1db875f987e8a",
+        "android_client_info": {
+          "package_name": "com.example.android.sportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015411763706-9e654sm8tr6oa9pbdac2j0ardl33fhss.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.sportal",
+            "certificate_hash": "395c28595f34924591e0d0214e4eedda8b41bf0c"
+          }
+        },
+        {
+          "client_id": "1015411763706-eoqf0a8k8vne8c1j50mih4aqdjate2f2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAatLgdaZMcHgB2OQRsQHBHeJ_xO1CbI6Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015411763706-eoqf0a8k8vne8c1j50mih4aqdjate2f2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
